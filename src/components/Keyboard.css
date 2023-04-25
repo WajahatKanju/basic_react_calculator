@@ -1,0 +1,65 @@
+.calculator-keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #454545;
+    padding: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Adjust the size of the button to fit the container */
+.button {
+    width: calc(25% - 10px);
+    height: calc(100% - 20px);
+    margin-right: 10px;
+}
+
+/* Make the equal button wider */
+.equal {
+    width: calc(50% - 10px);
+}
+
+/* Clear button style */
+.clear {
+    background-color: hsl(0, 70%, 60%);
+    color: white;
+}
+
+/* Operator button style */
+.keyboard button:not(.clear):not(.equal) {
+    background-color: hsl(260, 70%, 60%);
+    color: white;
+}
+
+/* Number button style */
+.keyboard button:not(.clear):not(.equal):not(.operator) {
+    background-color: hsl(60, 70%, 60%);
+    color: white;
+}
+
+/* Equal button style */
+.equal {
+    background-color: hsl(140, 70%, 60%);
+    color: white;
+}
+
+/* Custom colors passed in via props */
+.button.green {
+    background-color: green;
+}
+
+.button.red {
+    background-color: red;
+}
+/* Keybaord specfific */
+

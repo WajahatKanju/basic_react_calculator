@@ -1,0 +1,39 @@
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #212121;
+    height: 10rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+    position: relative;
+}
+
+.input {
+    position: absolute;
+    bottom: 60%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+    transform: rotateX(30deg);
+}
+
+.output {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transform: rotateX(-30deg);
+}
